@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShedenBright || Resume</title>
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">
+   
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="header_left">
+                <img src="{% static 'images/sheden.jpg' %}" alt="sheden"/>
+            </div>
+            <div class="header_right">
+                <h1>ShedenBright Olamide</h1>
+                <p>I"am Experience website and software developer with 3years+ Experience in both frontend and backend development </p>
+                <p>Website and software developer, SEO and Digital Marketing Expert</p>
+                <a href="mailto:shedenbright@gmail.com">Shedenbright@gmail.com</a>
+            </div>
+        </header>
+
+        <div class="social_links">
+           <a href="https://www.facebook.com/shedenbright">Facebook</a>
+           <a href="https://www.instagram.com/shedenbright">instagram</a>
+           <a href="">LinkedIn</a>
+           <a href="https://github.com/brightsheden">Github</a>
+           <a href="">Download Resume</a>
+        </div>
+
+        <div class="skills_section">
+            <h2>Skills and Qualification</h2>
+            <ul>
+                <li> ✔️ 3years Experience with front and backend development</li>
+                <li> ✔️ Extensive knowledge in API & Database Design.</li>
+                <li> ✔️ Experienced Digital Marketer and Content creator</li>
+                <li> ✔️ Co-founder  @<span><a href="https://www.facebook.com/PlpFactory">Plpfactory</a></span></li>
+                <li> ✔️ Ceo of <span><a href="https://www.facebook.com/shedenbright">Shedenbright Media</a></span></li>
+            </ul>
+        </div>
+
+        <div class="tech_stacks">
+            <h2>Tech Stack</h2>
+            <div class="tech_stack_skills">
+                {% for skill in skills %}
+                    <p >{{skill.name}}</p>
+               
+                {% endfor %}
+
+            </div>
+           
+        </div>
+
+        <div class="work_history_wrapper">
+            <h2>Work History</h2>
+            <hr>
+            <div class="work_history_card">
+                <h3>Software Developer | PlpFactory</h3>
+                <span>2021 - present</span>
+
+                <p>Built and maintaining entire <span><a href="www.plpfactory.store">Plpfactory website</a></span>, using top-notch tech-stacks,and
+                with good SEO(Search Engine Optimization ) practice. </p>
+
+                <ul>
+                    <li>Weekly Maintenance of the site</li>
+                    <li>Weekly Maintenance of the site</li>
+                    <li>Adding new and updating features on the platform</li>
+                </ul>
+
+            
+                
+            </div>
+
+            <div class="work_history_card">
+                <h3>Chief Technology Officer  | Teamattech Global</h3>
+                <span>2021 - present</span>
+
+                <p>Built and maintaining entire <span><a href="www.plpfactory.store">Plpfactory website</a></span>, using top-notch tech-stacks,and
+                with good SEO(Search Engine Optimization ) practice. </p>
+
+                <ul>
+                    <li>Weekly Maintenance of the site</li>
+                    <li>Adding new and updating features on the platform</li>
+                    <li>Etc</li>
+                </ul>
+
+            
+                
+            </div>
+
+            
+            <div class="work_history_card">
+                <h3>Digital Marketer  | ShedenBright Media</h3>
+                <span>2018 - present</span>
+
+                <p>Shedenbright media is an online marketing agencey that provide wide range of services, 
+                    ranging from Advertisment, Graphics design, Website Design, Content creation and Video ads.
+                </p>
+
+                <ul>
+                    <li>Weekly Maintenance of the platform</li>
+                    <li>Writting quality content for the platform</li>
+                    <li>Running Facebook and instagram ads</li>
+                    <li>Helping local business scale and grow online</li>
+                    <li>Promoting and growing the visibility of the platform</li>
+                </ul>
+
+            
+                
+            </div>
+
+          
+          
+        </div>
+
+       <div class="projects-wrapper">
+        <h2>Projects and accomplishement</h2>
+
+        <hr>
+
+      
+        <ul>
+            {% for project in projects %}
+                <li><a href="{{ project.url }}">🏆 {{project.name}}</a></li>
+            {% endfor %}
+               
+        </ul>
+        
+
+
+         
+        
+       </div>
+
+
+
+    </div>
+  
+</body>
+</html>

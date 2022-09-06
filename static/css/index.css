@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Readex Pro';
+    line-height: 1.5em;
+}
+body{
+    background-color:#131415;
+    color: #adb0b1;
+}
+
+.container{
+    width: 95%;
+    max-width: 990px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.header_left{
+
+
+}
+.header_left > img{
+    border-radius: 50%;
+    width: 75%;
+
+    
+}
+
+.header_right > h1{
+    font-size: 48px;
+    line-height: 1em;
+    margin-bottom: 20px;
+
+
+}
+
+.header_right > p{
+    font-size: 20px;
+    color: #adb0b1;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+.header_right a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 300;
+    font-size: 20px;
+}
+
+.social_links{
+    display: flex;
+    justify-content: space-evenly;
+
+    margin-bottom: 20px;
+}
+
+.social_links a {
+    text-decoration: none;
+    color: #adb0b1;
+}
+
+.skills_section{
+ 
+}
+
+.skills_section h2{
+    margin-top: 10px;
+    color: whitesmoke;
+}
+
+.skills_section ul{
+    list-style: none;
+    margin-left: 20px;
+}
+
+.tech_stacks{
+     margin-top: 30px;
+     margin-bottom: 30px;
+
+}
+
+.tech_stack_skills{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    font-size: 0.9em;
+}
+
+.tech_stack_skills > p {
+    border-radius: 5px ;
+    border: 2px solid white;
+    padding: 0.5em 1em;
+    align-items: center;
+}
+
+.work_history_card{
+    border-left: 1px solid #aaa;
+ 
+    
+    margin-top: 3em;
+    margin-bottom: 3em;
+    padding-left: 2em;
+  
+}
+
+.work_history_wrapper h3{
+    color: whitesmoke;
+}
+
+.work_history_card ul{
+    margin-left: 30px;
+    font-size: 18px;
+}
+
+.projects-wrapper{
+    color:#fff;
+}
+
+hr{
+    color: #aaa;
+}
+
+.projects-wrapper > h2{
+    margin-bottom: 0.5rem;
+}
+
+ul{
+    list-style: none;
+ 
+}
+
+.projects-wrapper ul li{
+    margin-bottom: .5rem;
+    margin-top: .5rem;
+    padding: 0.5rem;
+    border-bottom: 2px solid rgb(129, 127, 127);
+}
+
+ul li a{
+    color: white;
+    text-decoration: none;
+   
+}
+
+@media screen and (max-width:768px) {
+    header{
+        display: block;
+        margin-top: .5rem;
+    }
+
+    .header_left{
+        text-align: center;
+        margin-bottom: 0.5rem;
+
+
+    }
+    .header_left > img{
+        border-radius: 50%;
+        width: 50%;
+    }
+    
+    
+}
